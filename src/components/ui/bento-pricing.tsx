@@ -91,7 +91,7 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            PRO ГЕЙМЕР
           </Badge>
           <Badge
             variant="outline"
@@ -108,16 +108,16 @@ export function BentoPricing() {
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              2 500 ₽
             </span>
             <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Безлимитные сессии в любое время",
+              "ПК с RTX 4080 и 240Hz мониторами",
+              "Приоритетное бронирование места",
+              "Скидка 20% на турниры и события",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,47 +129,50 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        titleBadge="РАЗОВЫЙ"
+        priceLabel="150 ₽"
+        priceSuffix="/час"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "Доступ к любому ПК в клубе",
+          "Быстрый интернет 1 Гбит/с",
+          "Гарнитура и периферия в комплекте",
+          "Чай/кофе включён",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Прийти"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="НОЧНОЙ"
+        priceLabel="800 ₽"
+        priceSuffix="/ночь"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "С 23:00 до 08:00 — 9 часов игры",
+          "ПК на твой выбор",
+          "Снеки и напитки включены",
         ]}
         className="lg:col-span-4"
+        cta="Забронировать"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="СТУДЕНТ"
+        priceLabel="1 200 ₽"
+        priceSuffix="/мес"
+        features={["20 часов игры в месяц", "Скидка по студенческому билету", "Доступ к турнирам клуба"]}
         className="lg:col-span-4"
+        cta="Оформить"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
+        titleBadge="КОРПОРАТИВ"
         priceLabel="По запросу"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Аренда всего зала",
+          "Персональный организатор",
+          "Турниры и командные ивенты",
+          "Кейтеринг и оформление",
         ]}
         className="lg:col-span-8"
         cta="Связаться"
